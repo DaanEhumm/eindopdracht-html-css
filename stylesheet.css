@@ -1,0 +1,229 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 40px 50px;
+}
+.logo {
+    width: 350px;
+    height: auto;
+}
+.main-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+    margin-bottom: 20px;
+}
+.ski {
+    margin-right: 75%;
+    font-size: 54px;
+    font-weight: bold;
+    color: black;
+    margin-bottom: 0;
+    text-decoration: none;
+    position: relative;
+}
+.home .ski::after{
+    content: "";
+    position: absolute;
+    left: 50%; 
+    bottom: -1px; 
+    width: 120%; 
+    height: 2px; 
+    background-color: black;
+    border-radius: 2px;
+    transform: translateX(-50%); 
+}
+.categories {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 5%;
+    margin-top:-2.7%;
+    flex-wrap:wrap;
+}
+.category {
+    padding: 15px 30px;
+    background: #fff;
+    border: 1.5px solid #000000;
+    cursor: pointer;
+    text-align: center;
+    border-radius: 40px;
+    transition: background 0.3s, border 0.3s;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.15);
+    position: relative;
+}
+.race-page .categoryfirst::after,
+.piste-page .category2::after,
+.allmountain-page .category3::after,
+.freestyle-page .categorylast::after {
+    content: "";
+    position: absolute;
+    left: 50%; 
+    bottom: -7px; 
+    width: 80%; 
+    height: 2px; 
+    background-color: black;
+    border-radius: 2px;
+    transform: translateX(-50%); 
+}
+.category:hover {
+    background: #cc0303;
+}
+.category-link{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    display: block;
+}
+.categoryfirst {
+    background: red;
+    color: white;
+}
+.category2{
+    background: white;
+    color: rgb(0, 0, 0);
+}
+.category3{
+    background: white;
+    color: rgb(0, 0, 0);
+}
+.categorylast{
+    background: black;
+    color: white;
+}
+.products {
+    display: grid; 
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    width: 80%
+}
+@media (max-width: 750px) {
+    .products { 
+    grid-template-columns: repeat(2, 1fr); 
+    }
+    .categories{
+    flex-direction: column;
+    align-items: center;
+}
+}
+.product {
+    background: #ffffff00;
+    text-align: center;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.15);
+    height: auto; 
+    padding: 10px; 
+    border-radius: 10px; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.3s ease-in-out;
+}
+.product img {
+    width: 100%;
+    height: 382px; 
+    object-fit: cover; 
+    border-radius: 10px;
+}
+.product-info {
+    width: 100%;
+    text-align: center;
+    padding-top: 10px;
+}
+.product-link{
+    text-decoration: none;
+    color: black;
+}
+.product-name {
+    font-size: 16px;
+    font-weight: bold;
+    color: #000000;
+}
+.product-price {
+    font-size: 14px;
+    color: #ff0000;
+}
+.product:hover {
+    transform: scale(1.1);
+}
+
+
+.product-page .main-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    width: 80%;
+}
+.product-page .product-images {
+    display: flex;
+    justify-content: space-between;
+    gap: 8px;
+    width: 70%;
+    margin: 10px 0;
+    margin-top: -5px;
+    padding: 10px 0;
+    border-bottom: 1px solid #ccc;
+    border-top: 1px solid #ccc;
+
+}
+.product-page .product-images img {
+    width: 48%;
+    height: auto;
+    border-radius: 2px;
+}
+.product-page .product-description {
+    width: 30%;
+    margin-bottom: 20px;
+    margin-right: 50%;
+}
+.product-page .accordion {
+    width: 30%;
+    margin-right:50%
+}
+.product-page details {
+    margin-bottom: 10;
+    padding: 1px;
+    background: #f9f9f9;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.15);
+}
+.product-page summary {
+    cursor: pointer;
+    font-weight: bold;
+    padding: 10px;
+    background: #ffffff;
+    color: rgb(0, 0, 0);
+    border-radius: 5px;
+}
+.product-page details p {
+    padding: 10px;
+    margin: 0;
+    background: white;
+}
+.product-page .extra-images {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    width: 80%;
+    margin-top: 20px;
+}
+.product-page .extra-images img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+footer {
+    margin-top: 50px;
+    width: 100%;
+    background: rgb(255, 0, 0);
+    padding: 50px 50px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
