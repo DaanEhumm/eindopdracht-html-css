@@ -227,3 +227,51 @@ footer {
     text-align: center;
     color: rgb(255, 255, 255);
 }
+/* Form opmaak, Toevoegingen na Feedback*/
+.form-container {
+    width: 80%;
+    max-width: 600px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+.form-container h2 {
+    text-align: center;
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 100px;
+}
+.form {
+    margin-bottom: 20px;
+}
+.form label {
+    display: block;
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 5px;
+}
+.form input, .form textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.form textarea {
+    resize: vertical;
+}
+button {
+    width: 100%;
+    padding: 15px;
+    background-color: #c20404;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+button:hover {
+    background-color: #550303;
+}
